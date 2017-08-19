@@ -1,0 +1,130 @@
+@charset "UTF-8";
+#video {
+    position: absolute;
+    background: #655656;
+    width: 150%;
+}
+
+.ytplayer-container {
+    position: absolute;
+    position: fixed;
+    z-index: -5;
+    top: 0;
+    left: 0;
+}
+
+#back {
+    float: left;
+    white-space:pre;
+    font-family: 'Vast Shadow', cursive;
+    margin-right: auto; 
+    margin-left: auto;
+    position: relative;
+    width: 100%;
+    color: deeppink;
+    height: 75px;
+    background: rgba(0, 0, 0, 0.0);
+    text-align: center;
+}
+
+#layer1 {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 2px;
+    position: fixed;
+    font-family: 'Vast Shadow', cursive;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    width: 0px;
+    height: 100px;
+    background: rgba(234, 67, 67, 0.6);
+    text-align: center;
+    float: left;
+}
+#layer2 {
+    
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 2px;
+    font-family: 'Vast Shadow', cursive;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    width: 0px;
+    height: 100px;
+    background: rgba(200, 4, 56, 0.6);
+    text-align: center;
+    float: left;
+}
+#layer3 {
+    
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 2px;
+    font-family: 'Vast Shadow', cursive;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    width: 0px;
+    height: 100px;
+    background: rgba(200, 4, 148, 0.6);
+    text-align: center;
+    float: left;
+}
+#layer4 {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 2px;
+    font-family: 'Vast Shadow', cursive;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    width: 0px;
+    height: 100px;
+    background: rgba(193, 4, 200, 0.6);
+    text-align: center;
+    float: left;
+}
+#layer5 {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 2px;
+    font-family: 'Vast Shadow', cursive;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    width: 0px;
+    height: 150px;
+    background: rgba(161, 4, 200, 0.6);
+    text-align: center;
+    float: left;
+}
+#layer6 {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 2px;
+    font-family: 'Vast Shadow', cursive;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    width: 0px;
+    height: 100px;
+    background: rgba(4, 89, 200, 0.6);
+    text-align: center;
+    float: left;
+}
+#layer7 {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 2px;
+    font-family: 'Vast Shadow', cursive;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    width: 0px;
+    height: 100px;
+    background: rgba(4, 144, 200, 0.6);
+    text-align: center;
+    float: left;
+}

@@ -1,0 +1,79 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "jquery-youtube-background@git+https://github.com/sabrehagen/jQuery.YoutubeBackground.git",
+        "scope": null,
+        "escapedName": "jquery-youtube-background",
+        "name": "jquery-youtube-background",
+        "rawSpec": "git+https://github.com/sabrehagen/jQuery.YoutubeBackground.git",
+        "spec": "git+https://github.com/sabrehagen/jQuery.YoutubeBackground.git",
+        "type": "hosted",
+        "hosted": {
+          "type": "github",
+          "ssh": "git@github.com:sabrehagen/jQuery.YoutubeBackground.git",
+          "sshUrl": "git+ssh://git@github.com/sabrehagen/jQuery.YoutubeBackground.git",
+          "httpsUrl": "git+https://github.com/sabrehagen/jQuery.YoutubeBackground.git",
+          "gitUrl": "git://github.com/sabrehagen/jQuery.YoutubeBackground.git",
+          "shortcut": "github:sabrehagen/jQuery.YoutubeBackground",
+          "directUrl": "https://raw.githubusercontent.com/sabrehagen/jQuery.YoutubeBackground/master/package.json"
+        }
+      },
+      "/Users/JSpeck/Desktop/jebroen"
+    ]
+  ],
+  "_from": "git+https://github.com/sabrehagen/jQuery.YoutubeBackground.git",
+  "_id": "jquery-youtube-background@1.0.0",
+  "_inCache": true,
+  "_location": "/jquery-youtube-background",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "jquery-youtube-background@git+https://github.com/sabrehagen/jQuery.YoutubeBackground.git",
+    "scope": null,
+    "escapedName": "jquery-youtube-background",
+    "name": "jquery-youtube-background",
+    "rawSpec": "git+https://github.com/sabrehagen/jQuery.YoutubeBackground.git",
+    "spec": "git+https://github.com/sabrehagen/jQuery.YoutubeBackground.git",
+    "type": "hosted",
+    "hosted": {
+      "type": "github",
+      "ssh": "git@github.com:sabrehagen/jQuery.YoutubeBackground.git",
+      "sshUrl": "git+ssh://git@github.com/sabrehagen/jQuery.YoutubeBackground.git",
+      "httpsUrl": "git+https://github.com/sabrehagen/jQuery.YoutubeBackground.git",
+      "gitUrl": "git://github.com/sabrehagen/jQuery.YoutubeBackground.git",
+      "shortcut": "github:sabrehagen/jQuery.YoutubeBackground",
+      "directUrl": "https://raw.githubusercontent.com/sabrehagen/jQuery.YoutubeBackground/master/package.json"
+    }
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "git+https://github.com/sabrehagen/jQuery.YoutubeBackground.git#6ba18fe2584fba0278a5abe4f881d21b45142e7e",
+  "_shasum": "a8477ee374708933ff2579e2f3c1f28eaf988f36",
+  "_shrinkwrap": null,
+  "_spec": "jquery-youtube-background@git+https://github.com/sabrehagen/jQuery.YoutubeBackground.git",
+  "_where": "/Users/JSpeck/Desktop/jebroen",
+  "author": "",
+  "bugs": {
+    "url": "https://github.com/sabrehagen/jQuery.YoutubeBackground/issues"
+  },
+  "dependencies": {},
+  "description": "Inspired by [Tubular] (http://www.seanmccambridge.com/tubular/)",
+  "devDependencies": {},
+  "gitHead": "6ba18fe2584fba0278a5abe4f881d21b45142e7e",
+  "homepage": "https://github.com/sabrehagen/jQuery.YoutubeBackground#readme",
+  "license": "ISC",
+  "main": "src/jquery.youtubebackground.js",
+  "name": "jquery-youtube-background",
+  "optionalDependencies": {},
+  "readme": "# jQuery.BackgroundVideo V1.0.5\nInspired by [Tubular] (http://www.seanmccambridge.com/tubular/)\n\nExample: http://rochestb.github.io/jQuery.YoutubeBackground\n360 Video Example: http://rochestb.github.io/jQuery.YoutubeBackground/360.html\n\nProduction Example: [www.cpbgroup.com] (http://cpbgroup.com)\n\n[jQuery](http://jquery.com/) plugin that lets you create background videos using youtube api\n\n\nPut the script at the [bottom](https://developer.yahoo.com/performance/rules.html#js_bottom) of your markup right after jQuery:\n\n```html\n <script src=\"http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js\"></script>\n <script src=\"src/jquery.youtubebackground.js\"></script>\n```\n\n```html\n<div id=\"video\"></div>\n```\n\nCall the [plugin](http://learn.jquery.com/plugins/) function and your carousel is ready.\n\n```javascript\n$('#video').YTPlayer({\n    fitToBackground: true,\n    videoId: 'LSmgKRx5pBo'\n});\n```\n\n## Need to customize some CSS in order to make it a background\n```css\n#video{\n position: relative;\n background: transparent;\n}\n\n.ytplayer-container{\n position: absolute;\n top: 0;\n z-index: -1;\n}\n```\n\n## Works with Youtube Javascript API\n\n[Youtube Javascript API Options](https://developers.google.com/youtube/js_api_reference)\n\nAny youtube option must be placed within the playerVars object.\n```\n$('#video').YTPlayer({\n    fitToBackground: true,\n    videoId: 'LSmgKRx5pBo'\n    playerVars: {\n      modestbranding: 0,\n      autoplay: 1,\n      controls: 1,\n      showinfo: 0,\n      branding: 0,\n      rel: 0,\n      autohide: 0,\n      start: 59\n    }\n});\n```\n\nAccess all of YouTube's API events and methods by using player:\n```\nvar player = $('#background-video').data('ytPlayer').player;\nplayer.pauseVideo();\nplayer.playVideo();\n\nplayer.addEventListener('onStateChange', function(data){\n  console.log(\"Player State Change\", data);\n});\n\n```\n\n## Options\nFor more details visit our [Documentations Page] (http://rochestb.github.io/jQuery.YoutubeBackground)\n\n\n## Install with Bower\n\n```\nbower install youtube-background-video\n```\n## Documentation\n\n[Documentations Page] (http://rochestb.github.io/jQuery.YoutubeBackground)\n\n## Contributing\n\nI welcome contributors, bugs, and questions.\n\n### Bug reports\n\nA bug is a **demonstrable problem** that is caused by the code in the repository. Good bug reports are extremely helpful, so thanks!\n\nGuidelines for bug reports:\n\n  1. Use the GitHub issue search — check if the issue has already been reported.\n\n  2. Check if the issue has been fixed — try to reproduce it using the latest `develop` branch in the repository.\n\n  3. Isolate the problem — ideally create a reduced test case and a live example. This [JSFiddle](http://jsfiddle.net/u3FTZ/) is a helpful template you can fork.\n\n\n**By submitting a patch, you agree to allow the project owner to\nlicense your work under the terms of the [MIT License](LICENSE).**\n\n## License\n\nThe code and the documentation are released under the [MIT License](LICENSE).\n",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sabrehagen/jQuery.YoutubeBackground.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "1.0.0"
+}
